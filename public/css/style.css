@@ -1,0 +1,104 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#full {
+  padding-top: 2rem;
+}
+
+#favbag {
+  padding-top: 1px;
+}
+
+#favoritkan {
+  padding: 14px 40px;
+}
+
+#bagikan {
+  padding: 14px 40px;
+}
+
+#favo {
+  padding: 0;
+  border: none;
+  background: none;
+  width: 110px;
+  font-size: small;
+}
+
+#garis {
+  padding: 10px;
+  border: none;
+  width: 10pc;
+}
+
+#share1 {
+  padding: 0;
+  border: none;
+  background: none;
+  width: 110px;
+  font-size: small;
+}
+
+#btn-fav {
+  color: black;
+}
+
+#btn-share {
+  color: black;
+}
+
+#icon {
+  color: black;
+}
+
+
+#chat {
+  height: 38px;
+  padding-top: 0px;
+  padding-right: 28px;
+  padding-bottom: 0px;
+  padding-left: 28px;
+  color: black;
+}
+
+#keranjang {
+  height: 38px;
+  padding-top: 0px;
+  padding-right: 28px;
+  padding-bottom: 0px;
+  padding-left: 28px;
+  color: black;
+}
+
+#beli {
+  height: 38px;
+  padding-top: 0px;
+  padding-right: 38px;
+  padding-bottom: 0px;
+  padding-left: 38px;
+  background-color: #ec0e49;
+}
+
+#send {
+  padding-top: 8px;
+}
+
+#change1 {
+  color: black;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+.fa-star {
+  color: gold;
+}
+
+small {
+  color: #BBBBBB;
+}
+
+.col-sm-auto {
+  padding-top: 1rem;
+  align-content: flex-start;
+}

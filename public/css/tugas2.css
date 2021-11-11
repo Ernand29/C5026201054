@@ -1,0 +1,99 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+
+nav { 
+    display: flex;
+    background-color: #334257;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: #ffffff;
+    height: 50px;
+    align-items: center;
+}
+
+nav .header {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: courier, cursive;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section { 
+    margin: auto;
+    margin-bottom: 50px;
+}
+.rounded {
+    border-radius: 50%;
+    padding: 1px;
+    border: 8px solid transparent;
+}
+
+.deskripsi {
+    position: relative;
+    right: -350px;
+    top: -250px;
+    font-family: 'Azeret Mono', monospace;
+}
+
+.deskripsi h1 {
+    font-size: 27px;
+    font-weight: bold;
+    color: #2C2E43;
+
+}
+
+.deskripsi h2 {
+    font-weight: 800;
+    font-size: 20px;
+    color: #47597E ; 
+}
+
+.deskripsi h3 {
+    font-weight: 800;
+    font-size: 20px;
+    color: #47597E ; 
+}
+
+.deskripsi .data {
+    font-weight: 800;
+    font-size: 18px;
+    color: #47597E ; 
+}
+
+.detail {
+    position: relative;
+    right: -20px;
+    top: -100px;
+    background: #CDF0EA;
+    border-radius: 2opx;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buttongreen {
+    background-color: #52dc90;
+    color: white;
+    box-shadow: 0 0 7px 0px #52dc90;
+    border: 1px solid #52dc90;
+}
