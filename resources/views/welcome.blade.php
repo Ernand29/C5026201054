@@ -90,10 +90,10 @@
                     <a href="tugas2.html">Tugas 2</a>
                     <a href="tugas3.html">Tugas 3</a>
                     <a href="praktikum1.html">Praktikum 1</a>
-                    <a href="https://nova.laravel.com">Tugas 4</a>
+                    <a href="tugas4">Tugas 4</a>
                     <a href="praktikum2">Praktikum 2</a>
                     <a href="ets">ETS</a>
-                    <a href="isiannama">Tugas PHP</a>
+                    <a href="showTugasphp">Tugas PHP</a>
                 </div>
             </div>
         </div>
