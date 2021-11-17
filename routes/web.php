@@ -15,13 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('ets', function () {
-    return view('htmlets');
-});
 Route::get('praktikum2', function () {
     return view('htmlprak2');
 });
 
+Route::get('tugas4', function () {
+    return view('htmltugas4');
+});
 
-Route::get('isiannama',"ViewController@showForm") ;
-Route::post('greetings',"ViewController@resultGreetings");
+
+Route::get('ets', "ViewController@ets");
+Route::get('showTugasphp',"ViewController@showTugasphp") ;
+Route::post('resultTugasphp',"ViewController@resultTugasphp");
