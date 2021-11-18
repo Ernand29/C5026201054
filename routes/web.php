@@ -34,3 +34,4 @@ Route::get('/pegawai/tambah','PegawaiController@tambah');//add
 Route::post('/pegawai/store','PegawaiController@store');//simpan
 Route::get('/pegawai/edit/{id}','PegawaiController@edit');
 Route::post('/pegawai/update','PegawaiController@update');
+Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
