@@ -27,3 +27,10 @@ Route::get('tugas4', function () {
 Route::get('ets', "ViewController@ets");
 Route::get('showTugasphp',"ViewController@showTugasphp") ;
 Route::post('resultTugasphp',"ViewController@resultTugasphp");
+
+//CRUD
+Route::get('/pegawai','PegawaiController@index');//lihat
+Route::get('/pegawai/tambah','PegawaiController@tambah');//add
+Route::post('/pegawai/store','PegawaiController@store');//simpan
+Route::get('/pegawai/edit/{id}','PegawaiController@edit');
+Route::post('/pegawai/update','PegawaiController@update');
