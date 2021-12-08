@@ -16,25 +16,24 @@
             @endforeach
         </select>
         <br>
-                <div class="form-group">
-                    <label for="dtpickerdemo" class="col-sm-2 control-label">Tanggal :</label>
-                    <div class='col-sm-4 input-group date ' id='dtpickerdemo'>
-                        <input type='text' class="form-control" name="tanggal" value="{{ $a->Tanggal }}" required="required" />
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-calendar"></span>
-                        </span>
-                    </div>
-                </div>
-                <script type="text/javascript">
-                    $(function() {
-                        $('#dtpickerdemo').datetimepicker({
-                            format: 'YYYY-MM-DD hh:mm:ss',
-                            showTodayButton: false,
-                            locale : 'id',
-                            "defaultDate": new Date(),
-                        });
-                    });
-                </script>
+        <div class="input-group mb-3">
+            <label for="datetimepicker1">Tanggal :</label>
+            <div class='input-group' id='datetimepicker1' data-td-target-input='nearest' data-td-target-toggle='nearest'>
+                <input id='datetimepicker1Input' type='text' class='form-control' name="tanggal" data-td-target='#datetimepicker1' required/>
+                <span class='input-group-text' data-td-target='#datetimepicker1' data-td-toggle='datetimepicker'>
+                    <span class='fas fa-calendar'></span>
+                </span>
+            </div>
+            <script>
+                new tempusDominus.TempusDominus(document.getElementById('datetimepicker1'), {
+                    hooks: {
+                        inputFormat: (context, date) => {
+                        return moment(date).format('YYYY-MM-DD hh:mm:ss')
+                        }
+                    }
+                });
+            </script>
+        </div>
 
                 Status <br />
                 <input type="radio" id="html" name="status" value="I" @if ($a->Status === "I" ) checked="checked" @endif>
