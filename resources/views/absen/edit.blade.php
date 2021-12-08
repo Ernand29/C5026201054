@@ -6,7 +6,6 @@
 
    @section('konten')
 
-<h3>{{ $judul }}</h3>
 	@foreach($absen as $a)
 	<form action="/absen/update" method="post">
 		{{ csrf_field() }}
