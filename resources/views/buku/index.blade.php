@@ -11,15 +11,21 @@
     <br />
     <br />
 
-    <div class="container" align="center">
-        <form action="/buku/cari" method="GET">
-            <input type="text" class="form-control" name="cari" placeholder="Cari buku "
-                value="{{ old('cari') }}">
+    <div class="row">
+        <div class="col-sm-7">
+            <form action="/buku/cari" method="GET">
+                <input type="text" class="form-control" name="cari" placeholder="Cari buku " value="{{ old('cari') }}">
+        </div>
+        <div class="col-sm-4">
             <input type="submit" class="btn btn-primary" value="CARI">
+        </div>
         </form>
     </div>
 
-    <table class="table table-success">
+    <br />
+    <br />
+
+    <table class="table table-bordered border-white mb-5 pb-5 table-dark">
         <tr>
             <th>Kode Buku</th>
             <th>Merk Buku</th>
@@ -45,5 +51,11 @@
     </table>
 
     {{ $buku->links() }}
+
+    <p>
+        Keterangan Tersedia: <br>
+        Y : Yes <br>
+        N : No <br>
+        </p>
 
 @endsection

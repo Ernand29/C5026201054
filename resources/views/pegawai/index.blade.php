@@ -11,15 +11,22 @@
     <br />
     <br />
 
-    <div class="container" align="center">
-        <form action="/pegawai/cari" method="GET">
-            <input type="text" class="form-control" name="cari" placeholder="Cari Pegawai berdasarkan nama atau alamat .."
-                value="{{ old('cari') }}">
+
+    <div class="row">
+        <div class="col-sm-7">
+            <form action="/pegawai/cari" method="GET">
+                <input type="text" class="form-control" name="cari" placeholder="Cari Pegawai berdasarkan nama atau alamat .." value="{{ old('cari') }}">
+        </div>
+        <div class="col-sm-4">
             <input type="submit" class="btn btn-primary" value="CARI">
+        </div>
         </form>
     </div>
 
-    <table class="table table-success">
+    <br />
+    <br />
+
+    <table class="table table-bordered border-white mb-5 pb-5 table-dark">
         <tr>
             <th>Nama</th>
             <th>Jabatan</th>

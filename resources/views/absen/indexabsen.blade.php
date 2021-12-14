@@ -10,7 +10,7 @@
 	<br/>
 	<br/>
 
-	<table class="table table-success">
+	<table class="table table-bordered border-white mb-5 pb-5 table-dark">
 		<tr>
 			<th>Nama Pegawai</th>
 			<th>Tanggal</th>
