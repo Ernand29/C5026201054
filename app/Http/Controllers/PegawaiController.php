@@ -38,9 +38,8 @@ class PegawaiController extends Controller
     // method untuk menampilkan view form tambah pegawai
     public function tambah()
     {
-
-        // memanggil view tambah
-        return view('pegawai.tambah');
+        $pegawai = DB::table('pegawai')->orderBy('pegawai_nama', 'asc')->get();
+        return view('pegawai.tambah', ['pegawai' => $pegawai]);
     }
 
     // method untuk insert data ke table pegawai

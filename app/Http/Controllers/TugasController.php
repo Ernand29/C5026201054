@@ -9,10 +9,12 @@ class TugasController extends Controller
 {
     public function index()
     {
-        // mengambil data dari table pegawai
-        $tugas = DB::table('tugas')->get();
+        $tugas = DB::table('tugas')
+       ->join('pegawai', 'tugas.IDPegawai', '=', 'pegawai.pegawai_id')
+       ->select('tugas.*', 'pegawai.pegawai_nama')
+       ->paginate() ;
 
-        // mengirim data pegawai ke view index
+        // mengirim data absen ke view indexabsen
         return view('tugas.index', ['tugas' => $tugas]);
     }
 
@@ -20,8 +22,8 @@ class TugasController extends Controller
     public function tambah()
     {
 
-        // memanggil view tambah
-        return view('tugas.tambah');
+        $tugas = DB::table('tugas')->orderBy('IDPegawai', 'asc')->get();
+        return view('tugas.tambah', ['tugas' => $tugas]);
     }
 
     // method untuk insert data ke table pegawai

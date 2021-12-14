@@ -53,3 +53,13 @@ Route::post('/absen/store','AbsenController@store');
 Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
+
+//CRUD
+Route::get('/buku','BukuController@index');//lihat
+Route::get('/buku/tambah','BukuController@tambah');//add
+Route::post('/buku/store','BukuController@store');//simpan
+Route::get('/buku/edit/{id}','BukuController@edit');
+Route::post('/buku/update','BukuController@update');
+Route::get('/buku/hapus/{id}','BukuController@hapus');
+Route::get('/buku/cari','BukuController@cari');
+Route::get('/buku/view/{id}','BukuController@detail');

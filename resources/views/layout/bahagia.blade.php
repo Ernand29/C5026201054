@@ -16,13 +16,13 @@
     <div class="container-fluid">
         <div class="row m-5">
             <aside class="col-2">
-                <header class="row navbar-brand container rounded bg-secondary bg-opacity-10 p-2">
+                <header class="row navbar-brand container rounded bg-dark p-2">
                     <div class="col-3 py-2">
                         <a href="https://github.com/Ernand29/C5026201054" class="navbar-brand">
                             <img src="{{ asset('image/foto1.png') }}" class="img-fluid rounded float-start"/>
                         </a>
                     </div>
-                    <div class="col-9 fw-bold text-decoration-none text-dark py-2">
+                    <div class="col-9 fw-bold text-decoration-none text-white py-2">
                         <div class="row">
                             <span>5026201054</span>
                         </div>
@@ -31,27 +31,24 @@
                         </div>
                     </div>
                 </header>
-                <div class="row container rounded bg-secondary bg-opacity-10 mt-4 p-2">
+                <div class="row container rounded bg-dark mt-4 p-2">
                     <nav class="navbar navbar-expand align-items-start py-2 sticky-top">
-                        <div class="col fw-bold">
+                        <div class="col fw-bold text-white">
                             <div class="align-items-center text-center mb-1">
                                 <span>Menu</span>
                             </div>
                             <ul class="navbar-nav flex-column">
                                 <li class="nav-item">
-                                    <a href="/pegawai" class="nav-link text-dark">Data Pegawai</a>
+                                    <a href="/pegawai" class="nav-link text-white">Data Pegawai</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/absen" class="nav-link text-dark">Data Absen</a>
+                                    <a href="/absen" class="nav-link text-white">Data Absen</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/tugas" class="nav-link text-dark">Data Tugas</a>
+                                    <a href="/tugas" class="nav-link text-white">Data Tugas</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link disabled">Minggu Depan</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link disabled">Praktikum</a>
+                                <li class="nav-white">
+                                    <a href="/buku" class="nav-link text-white">Praktikum</a>
                                 </li>
                             </ul>
                         </div>
@@ -59,10 +56,12 @@
                 </div>
             </aside>
             <div class="col-10">
-                <div class="row container rounded bg-secondary bg-opacity-10 p-5">
-                    <h1>@yield('judulhalaman')</h1>
-                    @section('konten')
+                <div class="row container rounded bg-dark p-5">
+                    <h1 class="text-white">@yield('judulhalaman')</h1>
+                    <div class="text-white">
+                        @section('konten')
                     @show
+                    </div>
                 </div>
             </div>
         </div>
