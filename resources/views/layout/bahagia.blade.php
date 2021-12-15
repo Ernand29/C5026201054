@@ -50,6 +50,9 @@
                                 <li class="nav-white">
                                     <a href="/buku" class="nav-link text-white">Praktikum</a>
                                 </li>
+                                <li class="nav-white">
+                                    <a href="/karyawan1" class="nav-link text-white">UAS</a>
+                                </li>
                             </ul>
                         </div>
                       </nav>

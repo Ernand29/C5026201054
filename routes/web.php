@@ -54,7 +54,7 @@ Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
 
-//CRUD
+//CRUD Buku
 Route::get('/buku','BukuController@index');//lihat
 Route::get('/buku/tambah','BukuController@tambah');//add
 Route::post('/buku/store','BukuController@store');//simpan
@@ -63,3 +63,9 @@ Route::post('/buku/update','BukuController@update');
 Route::get('/buku/hapus/{id}','BukuController@hapus');
 Route::get('/buku/cari','BukuController@cari');
 Route::get('/buku/view/{id}','BukuController@detail');
+
+//CRUD Karyawan 1
+Route::get('/karyawan1','Karyawan1Controller@index');//lihat
+Route::get('/karyawan1/edit/{id}','Karyawan1Controller@edit');
+Route::post('/karyawan1/update','Karyawan1Controller@update');
+Route::get('/karyawan1/view/{id}','Karyawan1Controller@detail');
